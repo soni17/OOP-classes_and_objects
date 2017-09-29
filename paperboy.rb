@@ -37,6 +37,8 @@ class Paperboy
       return deliveryTotal
     end
 
+    quota()
+
   end
   
 
@@ -45,3 +47,15 @@ class Paperboy
   end
 
 end
+
+
+puts tommy = Paperboy.new("Tommy")
+puts tommy.deliver(101,160)
+puts tommy.quota()
+puts tommy.earnings()
+puts tommy.report()
+puts " "
+puts tommy.quota()
+puts tommy.deliver(1,75)
+puts tommy.earnings()
+puts tommy.report()
